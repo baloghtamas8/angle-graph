@@ -1,0 +1,271 @@
+import React, { useEffect } from "react";
+
+const AngularPos = ({ a: angleA, b: angleB, c: angleC }) => {
+    useEffect(() => {
+        console.log(angleA, angleB, angleC);
+    }, [angleA, angleB, angleC]);
+
+    const BASE_DIMENSION = 600;
+
+    return (
+        <div>
+            <svg
+                viewBox={`0 0 ${BASE_DIMENSION} ${BASE_DIMENSION}`}
+                className="angle-graph"
+            >
+                <defs>
+                    <marker
+                        id="head"
+                        orient="auto"
+                        markerWidth="6"
+                        markerHeight="6"
+                        refX="0.1"
+                        refY="2"
+                    >
+                        <path d="M0,0 V4 L6,2 Z" fill="white" />
+                    </marker>
+                </defs>
+                <g id="Layer_1">
+                    <title>Layer 1</title>
+                    <ellipse
+                        ry={BASE_DIMENSION / 2 - 23}
+                        rx={BASE_DIMENSION / 2 - 23}
+                        id="svg_18"
+                        cy={BASE_DIMENSION / 2}
+                        cx={BASE_DIMENSION / 2}
+                        fill="#00adef"
+                    />
+                    <ellipse
+                        strokeWidth="2"
+                        ry="280"
+                        rx="280"
+                        id="svg_1"
+                        cy="300"
+                        cx="300"
+                        stroke="#000"
+                        fill="none"
+                    />
+                    <ellipse
+                        ry="227"
+                        rx="227"
+                        id="svg_19"
+                        cy="300"
+                        cx="300"
+                        fill="#ffffff"
+                    />
+                    <ellipse
+                        ry="219"
+                        rx="219"
+                        id="svg_20"
+                        cy="300"
+                        cx="300"
+                        fill="#66cef5"
+                    />
+                    <ellipse
+                        ry="223"
+                        rx="223"
+                        id="svg_2"
+                        cy="300"
+                        cx="300"
+                        stroke="#CFCFCF"
+                        fill="none"
+                    />
+                    <ellipse
+                        ry="170"
+                        rx="170"
+                        id="svg_21"
+                        cy="300"
+                        cx="300"
+                        fill="#ffffff"
+                    />
+                    <ellipse
+                        ry="166"
+                        rx="166"
+                        id="svg_3"
+                        cy="300"
+                        cx="300"
+                        stroke="#CFCFCF"
+                        fill="none"
+                    />
+                    <line
+                        strokeWidth="2"
+                        id="svg_4"
+                        y2="20"
+                        x2="300"
+                        y1="0"
+                        x1="300"
+                        stroke="#000"
+                        fill="none"
+                    />
+                    <line
+                        strokeWidth="2"
+                        id="svg_5"
+                        y2="300"
+                        x2="580"
+                        y1="300"
+                        x1="600"
+                        stroke="#000"
+                        fill="none"
+                    />
+                    <line
+                        strokeWidth="2"
+                        id="svg_6"
+                        y2="600"
+                        x2="300"
+                        y1="580"
+                        x1="300"
+                        stroke="#000"
+                        fill="none"
+                    />
+                    <line
+                        strokeWidth="2"
+                        id="svg_7"
+                        y2="300"
+                        x2="20"
+                        y1="300"
+                        x1="0"
+                        stroke="#000"
+                        fill="none"
+                    />
+                    <ellipse
+                        ry="161"
+                        rx="161"
+                        id="svg_22"
+                        cy="300"
+                        cx="300"
+                        fill="#b2e6fb"
+                    />
+                    <ellipse
+                        ry="116"
+                        rx="116"
+                        id="svg_23"
+                        cy="300"
+                        cx="300"
+                        fill="#ffffff"
+                    />
+                    <line
+                        id="svg_10"
+                        y2="103"
+                        x2="102"
+                        y1="80"
+                        x1="80"
+                        stroke="#000"
+                        strokeWidth="2"
+                        fill="none"
+                    />
+                    <line
+                        id="svg_11"
+                        y2="101"
+                        x2="497"
+                        y1="79"
+                        x1="521"
+                        stroke="#000"
+                        strokeWidth="2"
+                        fill="none"
+                    />
+                    <line
+                        id="svg_12"
+                        y2="498"
+                        x2="497"
+                        y1="520"
+                        x1="520"
+                        stroke="#000"
+                        strokeWidth="2"
+                        fill="none"
+                    />
+                    <line
+                        id="svg_13"
+                        y2="497"
+                        x2="102"
+                        y1="519"
+                        x1="80"
+                        stroke="#000"
+                        strokeWidth="2"
+                        fill="none"
+                    />
+                    <polygon
+                        id="svg_9"
+                        fill="#fff"
+                        transform={`rotate(${angleA}, 300, 300)`}
+                        points="300,145 320,188 280,188 "
+                        class="st0"
+                    />
+                    <polygon
+                        id="svg_24"
+                        fill="#fff"
+                        transform={`rotate(${angleB}, 300, 300)`}
+                        points="300,89 320,132 280,132"
+                        class="st0"
+                    />
+                    <polygon
+                        id="svg_25"
+                        fill="#fff"
+                        transform={`rotate(${angleC}, 300, 300)`}
+                        points="300,32 320,75 280,75"
+                        class="st0"
+                    />
+                    <line
+                        id="svg_8"
+                        y2="300"
+                        x2="21"
+                        y1="300"
+                        x1="216"
+                        stroke="#858585"
+                        fill="none"
+                    />
+                    <line
+                        id="svg_15"
+                        y2="300"
+                        x2="384"
+                        y1="300"
+                        x1="579"
+                        stroke="#858585"
+                        fill="none"
+                    />
+                    <line
+                        id="svg_16"
+                        y2="220"
+                        x2="300"
+                        y1="21"
+                        x1="300"
+                        stroke="#858585"
+                        fill="none"
+                    />
+                    <line
+                        id="svg_17"
+                        y2="383"
+                        x2="300"
+                        y1="579"
+                        x1="300"
+                        stroke="#858585"
+                        fill="none"
+                    />
+                    <text
+                        textAnchor="start"
+                        fontSize="33"
+                        strokeWidth="0"
+                        id="svg_27"
+                        y="299"
+                        x="265"
+                        fill="#000"
+                    >
+                        Pitch
+                    </text>
+                    <text
+                        textAnchor="start"
+                        fontSize="27"
+                        strokeWidth="0"
+                        id="svg_28"
+                        y="334"
+                        x="287"
+                        fill="#000"
+                    >
+                        θx
+                    </text>
+                </g>
+            </svg>
+        </div>
+    );
+};
+
+export default AngularPos;

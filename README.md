@@ -1,2 +1,3 @@
 # angle-graph
-Pitch, yaw and roll angles in one graph with React.js and SVG
+
+Show angles in a graph with React.js and SVG
