@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/baloghtamas8/angle-graph/static/css/main.b714f53f.css",
+    "main.js": "/baloghtamas8/angle-graph/static/js/main.29fe6297.js",
+    "static/js/787.518d9def.chunk.js": "/baloghtamas8/angle-graph/static/js/787.518d9def.chunk.js",
+    "index.html": "/baloghtamas8/angle-graph/index.html",
+    "main.b714f53f.css.map": "/baloghtamas8/angle-graph/static/css/main.b714f53f.css.map",
+    "main.29fe6297.js.map": "/baloghtamas8/angle-graph/static/js/main.29fe6297.js.map",
+    "787.518d9def.chunk.js.map": "/baloghtamas8/angle-graph/static/js/787.518d9def.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b714f53f.css",
+    "static/js/main.29fe6297.js"
+  ]
+}
